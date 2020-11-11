@@ -14,7 +14,7 @@ export default function ProjectCard({project}) {
     return (
         <div className='project-card'>
            <div className='poster' >
-               <img src={project.poster} alt='poster' width={'400px'} height={'200px'}/>
+               <img src={project.poster} alt='poster' width={'470px'} height={'240px'}/>
            </div>
            <div className='description'>
                <div className="title">
