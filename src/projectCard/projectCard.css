@@ -1,4 +1,4 @@
-.project-card{
+.project-card {
     display: flex;
     flex-direction: row;
     width: 80%;
@@ -8,32 +8,32 @@
     border: 1px solid rgba(0, 0, 0, 0.239);
     margin: 5%;
     border-left: none;
-    box-shadow:
-        0 2.8px 2.2px rgba(0, 0, 0, 0.02),
-        0 6.7px 5.3px rgba(0, 0, 0, 0.028),
-        0 12.5px 10px rgba(0, 0, 0, 0.035),
-        0 22.3px 17.9px rgba(0, 0, 0, 0.042),
-        0 41.8px 33.4px rgba(0, 0, 0, 0.05),
-        0 100px 80px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
 }
-.poster img{
-    object-fit: scale-down;   
+
+.poster img {
+    object-fit: cover;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }
-.poster{
+
+.poster {
     overflow: hidden;
     width: 55%;
+    height: 100%;
     border-right: 1px solid rgba(0, 0, 0, 0.239);
 }
 
-.description{
+.description {
     background: rgb(255, 255, 255);
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
-.title{
+
+.title {
     width: 100%;
     display: flex;
     font-weight: bolder;
@@ -42,7 +42,7 @@
     justify-content: center;
 }
 
-.description-text{
+.description-text {
     font-weight: lighter;
     display: flex;
     justify-content: center;
@@ -51,12 +51,13 @@
     text-align: justify;
 }
 
-.tech{
+.tech {
     /* width: 40%; */
     display: flex;
     justify-content: center;
 }
-.tech p{
+
+.tech p {
     background: #000;
     font-weight: bold;
     color: rgb(255, 151, 103);
@@ -65,13 +66,13 @@
     border-radius: 4px;
 }
 
-
-.links-button{
+.links-button {
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
-.links-button button{
+
+.links-button button {
     padding: 10px;
     background: none;
     border-color: rgba(0, 0, 0, 0.39);
@@ -79,7 +80,134 @@
     outline: none;
     font-weight: 35px;
 }
-.links-button button:hover{
+
+.links-button button:hover {
     background: rgb(61, 61, 61);
     color: white;
+}
+
+.left-desc {
+    background: rgb(173, 173, 173);
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.right-desc {
+    height: 50%;
+    background: rgb(219, 162, 162);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px) {
+    .project-card {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 45%;
+        background: rgb(255, 255, 255);
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.239);
+        margin: 5%;
+        border-left: none;
+        box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+    }
+    .poster img {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .poster {
+        overflow: hidden;
+        width: 100%;
+        height: 60%;
+        border-right: 1px solid rgba(0, 0, 0, 0.239);
+    }
+    .description {
+        background: rgb(255, 255, 255);
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .left-desc {
+        background: rgb(173, 173, 173);
+        height: 100%;
+        width: 50%;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .right-desc {
+        height: 100%;
+        width: 50%;
+        background: rgb(219, 162, 162);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        overflow: hidden;
+    }
+    .title {
+        width: 100%;
+        display: flex;
+        font-weight: bolder;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .description-text {
+        font-weight: lighter;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        font-size: 12px;
+        text-align: justify;
+    }
+    .tech {
+        /* width: 40%; */
+        display: flex;
+        justify-content: center;
+    }
+    .tech p {
+        background: #000;
+        font-weight: bold;
+        color: rgb(255, 151, 103);
+        margin-right: 10px;
+        padding: 5px;
+        font-size: 12px;
+        border-radius: 4px;
+    }
+    .links-button {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .links-button button {
+        padding: 5px;
+        background: none;
+        border-color: rgba(0, 0, 0, 0.39);
+        border-radius: 5px;
+        outline: none;
+        font-weight: 35px;
+    }
+    .links-button button:hover {
+        background: rgb(61, 61, 61);
+        color: white;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tech {
+        /* width: 40%; */
+        display: flex;
+        justify-content: center;
+        overflow: auto;
+    }
 }

@@ -14,15 +14,17 @@ export default function ProjectCard({project}) {
     return (
         <div className='project-card'>
            <div className='poster' >
-               <img src={project.poster} alt='poster' width={'470px'} height={'240px'}/>
+               <img src={project.poster} alt={`project snap @${project.title}`} />
            </div>
            <div className='description'>
+               <div className='left-desc'>
                <div className="title">
                    <span>{project.title}</span>
                </div>
 
                <div className="description-text"> {project.description} </div>
-               
+                </div>
+               <div className='right-desc'>
                <div className="tech">
                     {project.techStack.map((el,index)=> <p key={index}>{el}</p> )}
                </div>
@@ -34,6 +36,7 @@ export default function ProjectCard({project}) {
                 <button onClick={()=>openLinkInAnotherTab(project.codeLink)}>
                     code
                 </button>    
+               </div>
                </div>
            </div>
         </div>

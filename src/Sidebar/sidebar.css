@@ -1,4 +1,4 @@
-.sidebar{
+.sidebar {
     width: 100%;
     height: 100%;
     background: rgb(71, 71, 71);
@@ -9,7 +9,8 @@
     align-items: center;
     text-decoration: none;
 }
-.sidebar-list{
+
+.sidebar-list {
     display: flex;
     flex-direction: column;
     height: 40%;
@@ -17,16 +18,18 @@
     justify-content: space-around;
     width: 100%;
 }
-.project-type-list{
+
+.project-type-list {
     font-weight: bold;
     flex-direction: row;
     width: 100%;
     height: 15%;
     display: flex;
     margin-left: 18%;
-    align-items: center;    
+    align-items: center;
 }
-.project-type-list  span{
+
+.project-type-list span {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -36,14 +39,60 @@
     text-decoration: none;
 }
 
-.project-type-list span img{
+.project-type-list span img {
     width: 50px;
     height: 35px;
 }
 
-
-
-.links{
+.links {
     color: white;
     text-decoration: none;
+}
+
+@media screen and (max-width: 850px) {
+    .sidebar {
+        width: 100%;
+        height: 100%;
+        background: rgb(71, 71, 71);
+        display: flex;
+        color: white;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-decoration: none;
+    }
+    .sidebar-list {
+        display: flex;
+        flex-direction: row;
+        height: 40%;
+        align-items: center;
+        justify-content: space-around;
+        width: 30%;
+    }
+    .project-type-list {
+        font-weight: bold;
+        flex-direction: row;
+        width: 100%;
+        height: 15%;
+        display: flex;
+        margin-left: 18%;
+        align-items: center;
+    }
+    .project-type-list span {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 15px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .project-type-list span img {
+        width: 15px;
+        height: 20px;
+    }
+    .links {
+        color: white;
+        text-decoration: none;
+    }
 }
