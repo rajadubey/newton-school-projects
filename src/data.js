@@ -30,6 +30,14 @@ const jsGames = [
         hostedLink: 'https://gmzvs.csb.app/',
         codeLink: 'https://codesandbox.io/s/hangman-gmzvs',
         poster: 'https://ik.imagekit.io/sz7czkpood/hangman_aHwPNha_Zd.png'
+    },
+    {
+        title: 'Minesweeper',
+        techStack: ['JavaScript','Html','CSS'],
+        description: 'This is a solo puzzle game in which the task is to hit the every cell in the grid without touching the Bomb.',
+        hostedLink: 'https://minesweeper-ns.netlify.app/',
+        codeLink: 'https://github.com/rajadubey/Minesweeper',
+        poster: 'https://ik.imagekit.io/sz7czkpood/image_2020-11-20_121358_rEFmu2S1wH.png'
     }
 ];
 
