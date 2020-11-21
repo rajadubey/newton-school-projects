@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import "./index.css";
-import Sidebar from "./Sidebar/sidebar";
-import { jsGames, reactGames, otherProjects } from "./data";
-import ProjectCard from "./projectCard/projectCard";
+import Sidebar from "./components/Sidebar/sidebar";
+import { jsProjects, reactProjects, otherProjects } from "./data";
+import ProjectCard from "./components/projectCard/projectCard";
 
 function App() {
   return (
@@ -15,11 +15,11 @@ function App() {
         <Switch>
           <Route
             path="/js"
-            render={(props) => <Container list={jsGames} {...props} />}
+            render={(props) => <Container list={jsProjects} {...props} />}
           />
           <Route
             path="/react"
-            render={(props) => <Container list={reactGames} {...props} />}
+            render={(props) => <Container list={reactProjects} {...props} />}
           />
           <Route
             path="/others"

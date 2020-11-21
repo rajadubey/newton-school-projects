@@ -1,8 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import './projectCard.css'
 export default function ProjectCard({project}) {
-
+    const techStackStyle = {
+        width: `100/${project.techStack.length}`,
+    };
 
     const openLinkInAnotherTab = (url) =>{
         console.log('psp');
@@ -26,7 +27,8 @@ export default function ProjectCard({project}) {
                 </div>
                <div className='right-desc'>
                <div className="tech">
-                    {project.techStack.map((el,index)=> <p key={index}>{el}</p> )}
+                    {project.techStack.map((el,index)=>
+                        <p key={index} style={techStackStyle}>{el}</p> )}
                </div>
                
                <div className="links-button">

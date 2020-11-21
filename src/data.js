@@ -1,8 +1,8 @@
-const jsGames = [
+const jsProjects = [
     {
         title: 'Math Clash',
         techStack: ['JavaScript','Html','CSS'],
-        description: 'A web game, where players has to select a set of number to achive the given sum',
+        description: 'A web game, where players has to select a set of number to achieve the given sum',
         hostedLink: 'https://ln8n9.csb.app',
         codeLink: 'https://codesandbox.io/s/math-clash-ln8n9',
         poster: 'https://ik.imagekit.io/sz7czkpood/math-clash_oQOAxk4W6.png'
@@ -41,7 +41,7 @@ const jsGames = [
     }
 ];
 
-const reactGames = [
+const reactProjects = [
     {
         title: 'Tic Tac Toe',
         description: '',
@@ -97,6 +97,9 @@ const otherProjects = [
     
 ];
 
+const apis = [{},{}];
+
+const fullStackProjects = [{},{}];
 
 
-export {jsGames, reactGames, otherProjects};
+export  {jsProjects, reactProjects, otherProjects, apis, fullStackProjects};
